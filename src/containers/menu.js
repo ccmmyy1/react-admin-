@@ -5,29 +5,30 @@ const menu = [
         icon: 'home',
         auth: [1]
     },
-    {
-        title: '通用',
-        key: '/public',
-        icon: 'appstore',
-        auth: [1],
-        subs: [{ title: '按钮', key: '/public/button', icon: '' }, { title: '图标', key: '/public/icon', icon: '' }]
-    },
-    {
-        title: '导航',
-        key: '/nav',
-        icon: 'bulb',
-        subs: [
-            { title: '下拉菜单', key: '/nav/dropdown', icon: '' },
-            { title: '导航菜单', key: '/nav/menu', icon: '' },
-            { title: '步骤条', key: '/nav/steps', icon: '' }
-        ]
-    },
+    // {
+    //   title: '通用',
+    //   key: '/public',
+    //   icon: 'appstore',
+    //   auth: [1],
+    //   subs: [{ title: '按钮', key: '/public/button', icon: '' }, { title: '图标', key: '/public/icon', icon: '' }]
+    // },
+    // {
+    //   title: '导航',
+    //   key: '/nav',
+    //   icon: 'bulb',
+    //   subs: [
+    //     { title: '下拉菜单', key: '/nav/dropdown', icon: '' },
+    //     { title: '导航菜单', key: '/nav/menu', icon: '' },
+    //     { title: '步骤条', key: '/nav/steps', icon: '' }
+    //   ]
+    // },
     {
         title: '表单',
         key: '/form',
         icon: 'form',
         subs: [
             { title: '基础表单', key: '/form/base-form', icon: '' },
+            { title: '基础表单2', key: '/form/base-form2', icon: '' },
             { title: '步骤表单', key: '/form/step-form', icon: '' }
         ]
     },
@@ -37,6 +38,7 @@ const menu = [
         icon: 'pie-chart',
         subs: [
             { title: '表格', key: '/show/table', icon: '' },
+            { title: '表格功能', key: '/show/tableDemo', icon: '' },
             { title: '折叠面板', key: '/show/collapse', icon: '' },
             { title: '树形控件', key: '/show/tree', icon: '' },
             { title: '标签页', key: '/show/tabs', icon: '' }

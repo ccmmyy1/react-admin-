@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CustomBreadcrumb from '@/components/CustomBreadcrumb'
-import { Layout, Divider, Row, Col, Tag, Table, Button, Anchor } from 'antd'
+import { Layout, Divider, Row, Col, Tag, Table, Button, Anchor, Card, Affix } from 'antd'
 import '@/style/view-style/table.scss'
 
 const { Column } = Table
@@ -265,12 +265,14 @@ class TableView extends Component {
                 </div>
 
                 <Row>
-                    <Anchor className='toc-affix'>
-                        <Link href='#basic' title='基础表格' />
-                        <Link href='#JSX' title='JSX表格' />
-                        <Link href='#checked' title='可选表格' />
-                        <Link href='#sort' title='可筛选排序表格' />
-                    </Anchor>
+                    <Affix>
+                        <Anchor className='toc-affix'>
+                            <Link href='#basic' title='基础表格' />
+                            <Link href='#JSX' title='JSX表格' />
+                            <Link href='#checked' title='可选表格' />
+                            <Link href='#sort' title='可筛选排序表格' />
+                        </Anchor>
+                    </Affix>
                     <Col>
                         <div className='base-style'>
                             <h3 id='basic'>基础表格</h3>

@@ -12,11 +12,15 @@ const MenuView = loadable(() => import(/* webpackChunkName: 'menu' */ '@/views/N
 const StepView = loadable(() => import(/* webpackChunkName: 'step' */ '@/views/NavView/Step'))
 
 // 表单
-const FormBaseView = loadable(() => import(/* webpackChunkName: 'formBase' */ '@/views/FormView/FormBaseView'))
+const FormBaseView = loadable(() =>
+    import(/* webpackChunkName: 'formBase' */ '@/views/FormView/FormBaseView/FormBaseView')
+)
+const FormDemo = loadable(() => import(/* webpackChunkName: 'formBase' */ '@/views/FormView/FormBaseView/FormDemo'))
 const FormStepView = loadable(() => import(/* webpackChunkName: 'formStep' */ '@/views/FormView/FormStepView'))
 
 // 展示
-const TableView = loadable(() => import(/* webpackChunkName: 'table' */ '@/views/ShowView/Table'))
+const TableView = loadable(() => import(/* webpackChunkName: 'table' */ '@/views/ShowView/Table/Table'))
+const TableDemo = loadable(() => import(/* webpackChunkName: 'table' */ '@/views/ShowView/Table/TableDemo'))
 const CollapseView = loadable(() => import(/* webpackChunkName: 'collapse' */ '@/views/ShowView/Collapse'))
 const TreeView = loadable(() => import(/* webpackChunkName: 'tree' */ '@/views/ShowView/Tree'))
 const TabsView = loadable(() => import(/* webpackChunkName: 'tabs' */ '@/views/ShowView/Tabs'))
@@ -39,7 +43,9 @@ const routes = [
     { path: '/nav/steps', exact: false, name: '步骤条', component: StepView },
     { path: '/form/base-form', exact: false, name: '表单', component: FormBaseView },
     { path: '/form/step-form', exact: false, name: '表单', component: FormStepView },
+    { path: '/form/base-form2', exact: false, name: '基础表单', component: FormDemo },
     { path: '/show/table', exact: false, name: '表格', component: TableView },
+    { path: '/show/tableDemo', exact: false, name: '表格功能', component: TableDemo },
     { path: '/show/collapse', exact: false, name: '折叠面板', component: CollapseView },
     { path: '/show/tree', exact: false, name: '树形控件', component: TreeView },
     { path: '/show/tabs', exact: false, name: '标签页', component: TabsView },

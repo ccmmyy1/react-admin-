@@ -1,3 +1,4 @@
 import FormBaseView from './FormBaseView.jsx'
+import FormDemo from './FormDemo.jsx'
 
-export default FormBaseView
+export { FormBaseView, FormDemo }
